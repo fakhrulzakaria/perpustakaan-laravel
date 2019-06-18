@@ -17,8 +17,8 @@ class Get extends Controller {
     //     $pk = Buku::all();
     //     return view('update', compact('pk'));
     // }
-    // function destroy($id) {
-    //     Buku::find($id)->delete();
-    //     return redirect('/');
-    // }
+    function destroy($id) {
+        Buku::find($id)->delete();
+        return redirect('/');
+    }
 }
